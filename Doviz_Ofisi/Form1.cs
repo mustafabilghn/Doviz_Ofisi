@@ -211,8 +211,7 @@ namespace Doviz_Ofisi
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            DialogResult secim = new DialogResult();
-            secim = MessageBox.Show("Çıkış yapmak istediğinizden emin misiniz?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult secim = MessageBox.Show("Çıkış yapmak istediğinizden emin misiniz?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (secim == DialogResult.Yes)
             {
                 Application.Exit();
